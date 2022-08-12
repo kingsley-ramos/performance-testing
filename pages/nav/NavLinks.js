@@ -2,7 +2,7 @@ import { Button, Col, Container, Dropdown, Grid, Row } from "@nextui-org/react";
 
 const NavLinks = () => {
   return (
-    <Container fluid nowrap>
+    <Container fluid wrap="nowrap">
       <Row gap={0} justify="flex-end" align="center">
         <Col>
           <Dropdown>

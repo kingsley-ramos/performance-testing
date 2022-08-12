@@ -1,9 +1,13 @@
-import { Card, Container, Row, Grid, Link, Text } from "@nextui-org/react";
+import { Card, Container, Row, Grid, Link, Text, Image } from "@nextui-org/react";
 
 export const OtherCards = ({ image, heading, link, text }) => (
-  <Grid.Container alignItems="center" wrap="nowrap" style={{margin: '10px 0'}}>
+  <Grid.Container
+    alignItems="center"
+    wrap="nowrap"
+    style={{ margin: "10px 0" }}
+  >
     <Grid xs={4} md={3}>
-      <img width="100%" src={image} alt="Banner" />
+      <Image height={113} width={200} src={image} alt="Banner" />
     </Grid>
     <Grid>
       <Link href={link}>

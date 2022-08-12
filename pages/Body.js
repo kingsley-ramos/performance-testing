@@ -1,4 +1,4 @@
-import { Card, Container, Col, Grid, Row, Button, Text, Spacer } from "@nextui-org/react";
+import { Card, Container, Col, Grid, Row, Button, Text, Spacer, Image } from "@nextui-org/react";
 import NewsCard from "./NewsCard";
 import ShopCard from "./ShopCard";
 import Other from "./Other";
@@ -10,16 +10,17 @@ export const Body = () => (
     justify="center"
     wrap="wrap"
     style={{
-      paddingTop: "100px",
+      paddingTop: "75px",
     }}
   >
     <Grid xs={12}>
       <Container fluid>
         <Row direction="column" align="center">
           <Col>
-            <img
-              width="100%"
-              src="https://tpc.googlesyndication.com/simgad/8572446148985133851"
+            <Image
+              height={121}
+              width={967}
+              src="https://tpc.googlesyndication.com/simgad/13682594288002787745"
               alt="Banner"
             />
             <Spacer y={1} />
@@ -38,8 +39,9 @@ export const Body = () => (
         <Row direction="column" align="center">
           <Col>
             <Spacer y={2} />
-            <img
-              width="100%"
+            <Image
+              height={121}
+              width={967}
               src="https://tpc.googlesyndication.com/simgad/8572446148985133851"
               alt="Banner"
             />

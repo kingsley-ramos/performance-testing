@@ -9,15 +9,17 @@ const NavLogo = () => {
       wrap="nowrap"
     >
       <Grid xs={4} md={2}>
-        <img
-          width="100"
+        <Image
+          height={45}
+          width={67}
           src="https://cms.nhl.bamgrid.com/images/assets/binary/308180580/binary-file/file.svg"
           alt="Logo"
         />
       </Grid>
       <Grid>
-        <img
-          width="150"
+        <Image
+          height={23}
+          width={125}
           src="https://cms.nhl.bamgrid.com/images/photos/321078680/300x56/cut.png"
           alt="Logo Text"
         />

@@ -1,4 +1,4 @@
-import { Container, Col, Grid, Row, Link, Text } from "@nextui-org/react";
+import { Container, Col, Grid, Row, Link, Text, Image } from "@nextui-org/react";
 import styles from "../styles/Home.module.css";
 
 export const topLinks = [
@@ -68,8 +68,9 @@ export const Footer = () => (
       style={{ maxWidth: "1200px", margin: "auto" }}
     >
       <Grid xs={8} md={3}>
-        <img
-          width="200"
+        <Image
+          height={167}
+          width={250}
           src="https://cms.nhl.bamgrid.com/images/assets/binary/308180580/binary-file/file.svg"
           alt="Logo"
         />
@@ -118,8 +119,9 @@ export const Footer = () => (
       style={{ maxWidth: "1200px", margin: "40px auto 0" }}
     >
       <Grid xs={8} md={3}>
-        <img
-          width="200"
+        <Image
+          height={49}
+          width={200}
           src="https://www-league.nhlstatic.com/images/logos/league-dark/133-com.svg"
           alt="Logo"
         />
@@ -128,7 +130,10 @@ export const Footer = () => (
         <Grid.Container alignItems="center" justify="flex-start">
           {bottomLinks.map(({ link, text }, index) => {
             return (
-              <Grid style={{ padding: "0", margin: "0 20px 0 0" }} key={`top-${index}`}>
+              <Grid
+                style={{ padding: "0", margin: "0 20px 0 0" }}
+                key={`top-${index}`}
+              >
                 <Link
                   href={link}
                   key={index}
