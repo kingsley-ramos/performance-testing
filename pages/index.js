@@ -3,7 +3,8 @@ import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import { Button } from "@nextui-org/react";
 import Navigation from "./nav/Navigation";
-import BodyCard from "./BodyCard";
+import Body from "./Body";
+import Footer from "./Footer";
 
 export default function Home() {
   const NextButton = () => {
@@ -18,28 +19,13 @@ export default function Home() {
       <div className={styles.container}>
         <main className={styles.main}>
           <div className={styles.grid}>
-            <BodyCard />
+            <Body />
           </div>
         </main>
-
-        <footer className={styles.footer}>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Powered by{" "}
-            <span className={styles.logo}>
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                width={72}
-                height={16}
-              />
-            </span>
-          </a>
-        </footer>
       </div>
+      <footer className={styles.footer}>
+        <Footer />
+      </footer>
     </>
   );
 }

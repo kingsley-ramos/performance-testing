@@ -14,27 +14,21 @@ const Navigation = () => {
   const { theme } = useTheme();
 
   return (
-    <div
-      style={{
-        backgroundColor: theme.colors.primary.value,
-      }}
-    >
-      <Container fluid nowrap>
-        <Row gap={0} justify="space-between" align="center">
-          <Col justify="flex-start">
-            <Container alignContent="flex-start" fluid>
-              <Row gap={0} justify="flex-start">
-                <Col>
-                  <NavLogo />
-                </Col>
-              </Row>
-            </Container>
-          </Col>
-          <Col>
-            <NavLinks />
-          </Col>
-        </Row>
-      </Container>
+    <div style={{ backgroundColor: "#000000", padding: "10px 40px", position: 'fixed', top: 0, width: '100%', zIndex: '1' }}>
+      <Grid.Container alignItems="center" justify="space-between" wrap="nowrap">
+        <Grid xs={8} md={4}>
+          <Container alignContent="flex-start" fluid>
+            <Row gap={0} justify="flex-start">
+              <Col>
+                <NavLogo />
+              </Col>
+            </Row>
+          </Container>
+        </Grid>
+        <Grid>
+          <NavLinks />
+        </Grid>
+      </Grid.Container>
     </div>
   );
 };
