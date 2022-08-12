@@ -20,7 +20,7 @@ export const ShopCard = () => (
                 New
               </Text>
               <Text h3 color="black">
-                LA Kings Snapback "On the Ice" Cap
+                LA Kings Snapback &quot;On the Ice&quot; Cap
               </Text>
             </Col>
           </Card.Header>
