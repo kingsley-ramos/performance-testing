@@ -1,7 +1,7 @@
 import { Card, Container, Row } from "@nextui-org/react";
 import OtherCards from "./OtherCards";
 
-const cardList = [
+export const cardList = [
   {
     image:
       "https://cms.nhl.bamgrid.com/images/photos/335101762/1704x960/cut.jpg",
@@ -25,7 +25,7 @@ export const Other = () => (
     <Card.Body>
       <Container fluid>
         {cardList.map(({ image, heading, link, text }, index) => (
-          <Row direction="column" align="center">
+          <Row direction="column" align="center" key={`other-${index}`}>
             <OtherCards
               image={image}
               heading={heading}

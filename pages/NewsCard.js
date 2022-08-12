@@ -45,7 +45,7 @@ export const NewsCard = () => (
             <Row direction="column">
               <Col>
                 <Text size={18} weight="bold">
-                  Kings to Retire Dustin Brown's No. 23 and Unveil Statue
+                  Kings to Retire Dustin Brown&lsquo;s No. 23 and Unveil Statue
                 </Text>
                 <Text size={12} color="#BBB">
                   Ceremony to Honor Two-Time Stanley Cup Captain and Franchise

@@ -1,7 +1,7 @@
 import { Container, Col, Grid, Row, Link, Text } from "@nextui-org/react";
 import styles from "../styles/Home.module.css";
 
-const topLinks = [
+export const topLinks = [
   {
     link: "#",
     text: "KINGS PRIVACY POLICY",
@@ -32,7 +32,7 @@ const topLinks = [
   },
 ];
 
-const bottomLinks = [
+export const bottomLinks = [
   {
     link: "#",
     text: "FAQ",
@@ -78,7 +78,10 @@ export const Footer = () => (
         <Grid.Container alignItems="center" justify="flex-start">
           {topLinks.map(({ link, text }, index) => {
             return (
-              <Grid style={{ padding: "0", margin: "0 10px 5px 0" }}>
+              <Grid
+                style={{ padding: "0", margin: "0 10px 5px 0" }}
+                key={`top-${index}`}
+              >
                 <Link
                   href={link}
                   key={index}
@@ -125,7 +128,7 @@ export const Footer = () => (
         <Grid.Container alignItems="center" justify="flex-start">
           {bottomLinks.map(({ link, text }, index) => {
             return (
-              <Grid style={{ padding: "0", margin: "0 20px 0 0" }}>
+              <Grid style={{ padding: "0", margin: "0 20px 0 0" }} key={`top-${index}`}>
                 <Link
                   href={link}
                   key={index}
